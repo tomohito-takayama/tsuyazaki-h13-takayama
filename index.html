@@ -1,0 +1,370 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<style>:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}body{margin:0}[hidden]{display:none!important}</style>
+<title>初老賀の会 当日しおり</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=BIZ+UDPGothic:wght@400;700&family=Zen+Kaku+Gothic+New:wght@700;900&display=swap">
+<style>
+/* Layout: sticky header + 4タブ。スマホは1列カード、iPad(768px〜)は時刻列を広げた2カラム/グリッド */
+:root{
+  --bg:#f3f5f8; --surface:#ffffff; --ink:#18202e; --muted:#5b6578; --line:#dde2ea;
+  --ai:#24407a; --ai-soft:#e6ecf7; --shu:#c2412d; --shu-soft:#fbe9e5; --ok:#2f7d4f; --ok-soft:#e3f2e8;
+  --f-display:"Zen Kaku Gothic New","Hiragino Sans","Yu Gothic",sans-serif;
+  --f-body:"BIZ UDPGothic","Hiragino Sans","Yu Gothic","Meiryo",sans-serif;
+  --script-size:1.08rem;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#111723; --surface:#1a2231; --ink:#e7ebf2; --muted:#9aa5b8; --line:#2c3648;
+  --ai:#8fb0ee; --ai-soft:#22304a; --shu:#f08b74; --shu-soft:#3a2420; --ok:#7fd1a0; --ok-soft:#1d3527; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#111723; --surface:#1a2231; --ink:#e7ebf2; --muted:#9aa5b8; --line:#2c3648;
+  --ai:#8fb0ee; --ai-soft:#22304a; --shu:#f08b74; --shu-soft:#3a2420; --ok:#7fd1a0; --ok-soft:#1d3527; color-scheme:dark}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--ink);font-family:var(--f-body);font-size:16px;line-height:1.6;-webkit-text-size-adjust:100%}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:10;background:var(--surface)}
+.wrap{max-width:980px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+header{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--surface);border-bottom:1px solid var(--line)}
+.head{padding-block:12px 0}
+.eyebrow{font-size:.75rem;letter-spacing:.08em;color:var(--muted)}
+h1{font-family:var(--f-display);font-weight:900;font-size:1.2rem;line-height:1.3;margin:2px 0 0;text-wrap:balance}
+.when{display:flex;flex-wrap:wrap;gap:4px 12px;font-size:.82rem;color:var(--muted);margin-top:4px}
+.when b{color:var(--ink);font-weight:700}
+#countdown{color:var(--shu);font-weight:700}
+nav{display:grid;grid-template-columns:repeat(4,1fr);margin-top:10px}
+nav a{display:block;text-align:center;padding:10px 4px 9px;font-size:.88rem;font-weight:700;color:var(--muted);text-decoration:none;border-bottom:3px solid transparent;min-height:44px}
+nav a[aria-current="page"]{color:var(--ai);border-bottom-color:var(--ai)}
+nav a:focus-visible,button:focus-visible,label:focus-within{outline:2px solid var(--ai);outline-offset:2px}
+main{padding-block:16px 48px}
+section.view{display:grid;gap:22px}
+h2{font-family:var(--f-display);font-weight:700;font-size:1.05rem;margin:0;display:flex;align-items:center;gap:8px}
+h2::before{content:"";width:6px;height:1.1em;border-radius:2px;background:var(--shu)}
+.block{display:grid;gap:10px}
+.note-line{font-size:.85rem;color:var(--muted);margin:0}
+/* timeline */
+ol.tl{list-style:none;margin:0;padding:0;background:var(--surface);border:1px solid var(--line);border-radius:12px;overflow:hidden}
+.ev{display:grid;grid-template-columns:76px 1fr;gap:12px;padding:12px 14px;border-top:1px solid var(--line)}
+.ev:first-child{border-top:0}
+.t{font-variant-numeric:tabular-nums;display:flex;flex-direction:column;line-height:1.25}
+.t b{font-size:1.15rem;font-weight:700}
+.t span{font-size:.82rem;color:var(--muted)}
+.t em{font-style:normal;font-size:.72rem;color:var(--ai);background:var(--ai-soft);border-radius:999px;padding:1px 7px;margin-top:4px;align-self:flex-start}
+.t .same{font-size:.8rem;color:var(--muted)}
+.c{min-width:0;display:grid;gap:6px}
+.what{margin:0;font-weight:700;white-space:pre-line;overflow-wrap:anywhere}
+.meta{display:flex;flex-wrap:wrap;gap:4px 14px;font-size:.84rem;color:var(--muted)}
+.meta span{display:inline-flex;gap:6px}
+.meta i{font-style:normal;font-size:.72rem;letter-spacing:.06em;border:1px solid var(--line);border-radius:4px;padding:0 5px;line-height:1.6}
+.meta .tbd{color:var(--shu);font-weight:700}
+.rem{margin:0;font-size:.84rem;background:var(--shu-soft);color:var(--ink);border-radius:8px;padding:6px 10px;overflow-wrap:anywhere}
+.ev.band{background:var(--ai-soft)}
+.ev.band .what{color:var(--ai)}
+.ev.now{box-shadow:inset 4px 0 0 var(--shu)}
+.now-pill{display:inline-block;font-size:.7rem;font-weight:700;color:#fff;background:var(--shu);border-radius:999px;padding:0 8px;margin-left:6px;vertical-align:2px}
+/* bus */
+.stops{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
+.stop{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:10px 12px;font-variant-numeric:tabular-nums}
+.stop small{display:block;font-size:.75rem;color:var(--muted)}
+.stop b{font-size:1.35rem}
+.stop b span{font-size:.8rem;color:var(--muted);font-weight:400}
+.toolbar{display:flex;flex-wrap:wrap;align-items:center;gap:8px;justify-content:space-between}
+.progress{font-weight:700;font-variant-numeric:tabular-nums}
+.btn{font:inherit;font-size:.82rem;border:1px solid var(--line);background:var(--surface);color:var(--ink);border-radius:8px;padding:8px 12px;min-height:40px;cursor:pointer}
+.btn.warn{border-color:var(--shu);color:var(--shu)}
+.checks{list-style:none;margin:0;padding:0;background:var(--surface);border:1px solid var(--line);border-radius:12px;overflow:hidden}
+.checks li{border-top:1px solid var(--line)}
+.checks li:first-child{border-top:0}
+.checks label{display:grid;grid-template-columns:28px 1fr auto;align-items:center;gap:10px;padding:11px 14px;min-height:52px;cursor:pointer}
+.checks input{width:22px;height:22px;accent-color:var(--ok);margin:0}
+.checks .nm{min-width:0;font-weight:700}
+.checks .sub{display:block;font-weight:400;font-size:.8rem;color:var(--muted)}
+.checks .num{font-size:.78rem;color:var(--muted);font-variant-numeric:tabular-nums}
+.checks .chip{font-size:.75rem;border-radius:999px;padding:2px 9px;background:var(--ai-soft);color:var(--ai);white-space:nowrap}
+.checks input:checked ~ .nm{color:var(--muted);text-decoration:line-through}
+.checks li:has(input:checked){background:var(--ok-soft)}
+.bus-group h3{font-size:.9rem;margin:0 0 6px;color:var(--muted);font-weight:700}
+.bus-grid{display:grid;gap:14px}
+.filters{display:flex;gap:6px;overflow-x:auto;padding-bottom:2px;-webkit-overflow-scrolling:touch}
+.filters button{flex:none;font:inherit;font-size:.82rem;border:1px solid var(--line);background:var(--surface);color:var(--ink);border-radius:999px;padding:6px 12px;min-height:36px;cursor:pointer}
+.filters button[aria-pressed="true"]{background:var(--ai);border-color:var(--ai);color:var(--surface)}
+.hint{font-size:.78rem;color:var(--muted);margin:0}
+/* script */
+.sizer{display:flex;gap:6px;align-items:center;font-size:.82rem;color:var(--muted)}
+.sizer button{font:inherit;font-weight:700;border:1px solid var(--line);background:var(--surface);color:var(--ink);border-radius:8px;min-width:44px;min-height:40px;cursor:pointer}
+.sizer button[aria-pressed="true"]{border-color:var(--ai);color:var(--ai);background:var(--ai-soft)}
+.scene{display:grid;gap:8px}
+.line{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:12px 14px;display:grid;gap:6px}
+.line .hd{display:flex;align-items:center;gap:8px;font-size:.82rem;font-variant-numeric:tabular-nums}
+.line .hd b{font-size:.95rem}
+.who{font-weight:700;border-radius:999px;padding:1px 10px;font-size:.78rem}
+.who.mc{background:var(--ai);color:var(--surface)}
+.who.other{background:var(--ai-soft);color:var(--ai)}
+.line p{margin:0;font-size:var(--script-size);line-height:1.85;white-space:pre-line;overflow-wrap:anywhere}
+.cue{display:flex;align-items:center;gap:8px;padding:6px 14px;font-size:.88rem;color:var(--muted);border-left:3px dashed var(--line);margin-left:10px}
+.cue b{color:var(--ink)}
+@media (min-width:768px){
+  body{font-size:17px}
+  h1{font-size:1.45rem}
+  .ev{grid-template-columns:120px 1fr;padding:14px 18px}
+  .t b{font-size:1.3rem}
+  .bus-grid{grid-template-columns:repeat(3,1fr);align-items:start}
+  .items-list{columns:2;column-gap:12px}
+  .line{padding:16px 20px}
+  .script-col{max-width:780px}
+}
+@media (prefers-reduced-motion:no-preference){nav a{transition:color .15s,border-color .15s}}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap head">
+    <div class="eyebrow">平成13年度 津屋崎中学校卒業生</div>
+    <h1>初老賀の会 当日しおり</h1>
+    <div class="when"><span><b>令和8年11月22日（日）</b></span><span>波折宮 → 華杏 弥太楼 → ブドウの樹 マルマーレ</span><span id="countdown"></span></div>
+    <nav aria-label="ページ切替">
+      <a href="#schedule" data-view="schedule">進行表</a>
+      <a href="#bus" data-view="bus">バス名簿</a>
+      <a href="#script" data-view="script">司会台本</a>
+      <a href="#items" data-view="items">準備物</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+  <section class="view" id="v-schedule"></section>
+  <section class="view" id="v-bus" hidden></section>
+  <section class="view" id="v-script" hidden></section>
+  <section class="view" id="v-items" hidden></section>
+</main>
+
+<script>
+(function(){
+const EVENT_DATE="2026-11-22";
+
+/* ===== タイムスケジュール ===== */
+const SCHEDULE=[
+ {title:"お祓い",place:"波折神社",rows:[
+  {s:"10:50",what:"幹事集合\n当日の準備物チェック\n支払実施（17,500円）",place:"波折神社",who:"幹事全員"},
+  {s:"11:15",e:"11:30",what:"参加者集合\n受付（35名。名前確認無し。人数あらかた）",place:"波折神社",who:"山脇"},
+  {s:"11:30",e:"11:45",what:"お祓い開始",place:"波折神社"},
+  {s:"11:45",e:"11:50",what:"記念品 配布\n階段写真撮影",place:"波折神社",who:"山脇",rem:"津崎、本田、大垣、大谷は幹事の車にて移動（西住と高山は、ゆかりの車に乗車）"}
+ ],foot:"※バスは波折宮駐車場に駐車。"},
+ {title:"バス",rows:[
+  {s:"11:50",what:"バス担当が波折神社にて待機\n（人数確認：幹事含めて16名）",place:"波折神社",who:"西住、山脇、桑名"},
+  {s:"12:00",e:"12:20",what:"波折神社 → 福間駅\n（人数確認：5名）",place:"福間駅",who:"西住、山脇、桑名"},
+  {s:"12:20",e:"12:30",what:"宮地嶽口 → 宮地嶽神社\n（人数確認：2名）",place:"宮地嶽神社 トイレがある小駐車場",who:"西住、山脇、桑名"},
+  {s:"12:30",e:"12:40",what:"宮地嶽神社 → カメリアステージ（乗車無）",place:"カメリアステージ正面",who:"西住、山脇、桑名"},
+  {s:"12:40",e:"12:55",what:"カメリアステージ → 勝浦小学校（乗車無）",place:"勝浦小学校 駐車場",who:"西住、山脇、桑名"},
+  {s:"12:55",e:"13:00",what:"勝浦小学校 → 華杏",who:"西住、山脇、桑名"},
+  {s:"16:30",what:"一次会終了",band:true},
+  {s:"16:40",e:"16:45",what:"華杏 → 勝浦小学校",place:"華杏弥太楼",who:"西住、山脇、桑名"},
+  {s:"16:45",e:"17:00",what:"勝浦小学校 → カメリア"},
+  {s:"17:00",e:"17:10",what:"カメリア → 宮地嶽神社駐車場"},
+  {s:"17:10",e:"17:25",what:"宮地嶽神社駐車場 → 宮地嶽口"},
+  {s:"17:25",e:"17:40",what:"福間駅 → マルマーレ"},
+  {s:"20:00",what:"二次会終了",band:true}
+ ]},
+ {title:"会場（一次会）",rows:[
+  {s:"12:20",what:"受付担当者集合",place:"華杏弥太楼",who:"津崎、本田、大垣、大谷"},
+  {what:"華杏への確認\n（喫煙場所、ステージの照明落とせるか、飲み物タイミング）",who:"高山"},
+  {what:"受付場所の準備、席札を席へ配置、マイクチェック",who:"津崎、本田、大垣、大谷"},
+  {what:"横断幕貼り付け、プロジェクタ設置、司会者席設置",who:"高山、西住"},
+  {s:"13:00",e:"13:30",what:"会場受付",who:"津崎、本田、大垣、大谷"},
+  {s:"13:30",e:"16:30",what:"開宴",band:true},
+  {s:"13:30",e:"13:35",what:"司会者挨拶",who:"髙山（司会）"},
+  {s:"13:35",e:"13:40",what:"開会宣言（世話人代表あいさつ）",who:"西住"},
+  {s:"13:40",e:"13:50",what:"恩師紹介",rem:"マイクを回す係を決める"},
+  {s:"13:50",e:"13:55",what:"乾杯",who:"丹生先生（発声）"},
+  {s:"13:55",e:"14:50",what:"歓談"},
+  {s:"14:50",e:"15:00",what:"写真撮影"},
+  {s:"15:00",e:"15:20",what:"余興1（あずき）"},
+  {s:"15:20",e:"15:30",what:"余興2（くじ引き、てぬぐい贈呈）"},
+  {s:"15:30",e:"15:35",what:"校歌斉唱"},
+  {s:"15:35",e:"15:45",what:"ムービー上映"},
+  {s:"15:45",e:"15:50",what:"恩師へ記念品贈呈"},
+  {s:"15:50",e:"15:55",what:"恩師代表ひとこと",who:"岡本先生"},
+  {s:"15:55",e:"16:00",what:"〆の挨拶（世話人代表）",who:"大垣"},
+  {s:"16:00",e:"16:05",what:"閉会宣言・事務連絡"},
+  {s:"16:00",e:"16:30",what:"バス・二次会場へ2便（16:30頃出発）"}
+ ]}
+];
+
+/* ===== バス乗車名簿 ===== */
+const BUS=[
+ {stop:"波折",names:["山脇け","安岡","網本","横山","秦","石塚","辻","小林","花田","日高","鳥飼","永浜","竜口","西住","山脇康平","桑名"]},
+ {stop:"福間",names:["松尾","石橋","花田さやか","尾垣","丹生先生"]},
+ {stop:"宮地嶽",names:["黒崎","永島ゆきやす"]}
+];
+
+/* ===== 司会シナリオ ===== */
+const SCRIPT=[
+ {scene:"開会時",lines:[
+  {t:"13:30",who:"司会",text:"只今より、平成13年度津屋崎中学校卒業生同窓会を開催いたします。\n本日司会を務めます髙山です。どうぞよろしくお願いいたします。\nまず、本日の席次ですが、基本的には中学3年生と小学校6年生、それぞれ当時のクラスごとに分かれております。\nただし、一部のテーブルはクラスの枠を超えて、懐かしい仲間たちが集まる席となっております。同じクラスだった皆さんも今日はぜひ垣根を越えて、昔話に花を咲かせながら楽しい時間をお過ごしください。"},
+  {t:"13:35",who:"司会",text:"それでは開会に先立ち世話人を代表いたしまして、世話人代表の西住より開会の宣言とご挨拶を申し上げます。"},
+  {cue:"世話人代表あいさつ",who:"西住"},
+  {t:"13:40",who:"司会",text:"西住君、ありがとうございました。\n\n次に出席いただいております恩師の先生がたの紹介をいたします。私がお名前を呼びましたら、ご起立ください。\nまた、マイクを回しますので、一言ちょうだいできればと存じます。\n（マイク回す係を誰かお願いします。）\n\n● 津屋崎中学校で1年1組？、2年5組、3年1組の担任をしてくださり、体育を教えてくださいました重富先生です！\n● 津屋崎中学校で3年3組の担任をしてくださり、音楽を教えてくださいました丹生先生です！\n● 津屋崎中学校で1年5組の担任をしてくださり、数学を教えてくださいました岡本先生です！\n● 津屋崎中学校で2年4組、3年4組の担任をしてくださり、英語を教えてくださいました田坂先生こと、重富かおり先生です！\n● 津屋崎小学校で5年1組、6年1組の担任としてお世話になりました、どしょう先生です！\n● 津屋崎小学校で5年2組、6年2組の担任でお世話になりました、おおてき先生こと、しょうじ先生です！\n● 津屋崎小学校で5年5組、6年5組の担任でお世話になりました、内藤先生です！"},
+  {t:"13:50",who:"司会",text:"先生方、ありがとうございました。それでは乾杯に移りたいと思います。乾杯のご発声は丹生先生にお願いしたいと思います。皆様グラスを持ってご起立ください。\n丹生先生、よろしくお願いいたします。"},
+  {cue:"乾杯"},
+  {t:"13:55",who:"司会",text:"丹生先生、ありがとうございました。それではしばしご歓談ください。\n（喫煙所あれば、案内）"},
+  {cue:"歓談"},
+  {t:"14:05",who:"司会",text:"本日、残念ながら参加が叶いませんでしたが、藤野先生から○○をいただいています。また、丹生先生からも△△をいただいています。アルコール飲める皆様は、是非いただいてください。"}
+ ]},
+ {scene:"写真撮影",lines:[
+  {t:"14:50",who:"司会",text:"ご歓談中失礼します。全員で写真撮影を行います。ステージへお集まりください。\nステージ上に掲げています垂れ幕は佐藤君のお父様にご記載いただきました。\n佐藤君、ありがとうございました。お父様にもよろしくお伝えください。"}
+ ]},
+ {scene:"余興1（あずき）",lines:[
+  {t:"15:00",who:"司会",text:"余興へバトンタッチ"},
+  {cue:"各卓対抗、トーナメント制。1回戦、2回戦、3回戦で1チーム勝ち抜け。"}
+ ]},
+ {scene:"余興2（くじ引き、手ぬぐい贈呈）",lines:[
+  {t:"15:20",who:"司会",text:"先生方に卓で引いてもらう。（この間に高山は正面にプロジェクタ準備）"}
+ ]},
+ {scene:"校歌斉唱",lines:[
+  {t:"15:30",who:"司会",text:"続きまして、津屋崎中学校校歌を唱和します。\n（スクリーンにYouTubeの動画流す。）\n皆様ご起立下さい。"},
+  {cue:"校歌",who:"BGM"}
+ ]},
+ {scene:"ムービー",lines:[
+  {t:"15:35",who:"司会",text:"ここで懐かしい思い出を振り返るムービーをご覧いただきます。"},
+  {cue:"ムービー上映"}
+ ]},
+ {scene:"閉会時",lines:[
+  {t:"15:45",who:"司会",text:"宴もたけなわではございますが、そろそろ閉会まで残す所わずかとなりました。ここで、恩師の先生に記念品贈呈をしたいと思います。先生方はステージへお上がりください。\n先生への記念品は本日参加が叶いませんでした平山さんに作成いただいています。"},
+  {cue:"記念品贈呈"},
+  {t:"15:50",who:"司会",text:"先生を代表して岡本先生よりひとこと頂戴したいと思います。岡本先生、よろしくお願いいたします。"},
+  {cue:"岡本先生 挨拶"},
+  {t:"15:55",who:"司会",text:"岡本先生、ありがとうございました。最後に世話人代表の大垣より閉会の宣言とご挨拶を申し上げます。大垣さん、よろしくお願いいたします。"},
+  {cue:"大垣 挨拶"},
+  {t:"16:00",who:"司会",text:"ありがとうございました。\nこれをもちまして平成13年度津屋崎中学校卒業生同窓会を終了します。"},
+  {who:"司会",text:"事務連絡です。\nバスに乗られる方は16時30分ぐらいに出発予定です。\nブドウの樹マルマーレ経由でカメリア、宮地嶽バス停、福間駅の順で止まります。\n時間になりましたらお知らせしますので、バスに乗られる方は少々お待ちください。\nなお、二次会参加希望の方でまだ二次会参加の申込みのお済みでない方は世話人までお声がけください。"}
+ ]}
+];
+
+/* ===== 準備物 ===== */
+const ITEMS=[
+ ["ペン","全員"],["バス乗車リスト","髙山"],["くじ引き箱","髙山"],["iPad","髙山"],["PC（電源も）","髙山","Anker"],
+ ["プロジェクタ・USB","髙山"],["HDMIケーブル（変換機も）","髙山"],["校歌音源","髙山"],["養生テープ","髙山"],
+ ["現金（封筒入り）","田原","37,500円（波折17,500円、カメラマン代20,000円）"],
+ ["1次会 名札","田原"],["1次会 参加者リスト","田原"],["1次会 席次","田原"],["1次会 卓札","田原"],
+ ["アルバム","大垣","先生達に配布。7部"],["受付と書いた紙","大垣"],
+ ["先生方へのプレゼント（花）","西住","13日に受領"],["スピーカー","西住","できれば前日11/21までに華杏に持っていきたい"],
+ ["1次会 垂れ幕","西住","できれば前日11/21までに華杏に持っていきたい"],["あずき・皿・はし","西住"],["2次会 参加者リスト","西住"],
+ ["ドラムリール","山脇","できれば前日11/21までに華杏に持っていきたい"],["プロジェクタスクリーン","山脇","できれば前日11/21までに華杏に持っていきたい"],
+ ["1次会 余興景品","秋吉"],["旗","秋吉"]
+];
+
+/* ===== helpers ===== */
+const esc=s=>String(s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const toMin=t=>{if(!t)return null;const[h,m]=t.split(":").map(Number);return h*60+m};
+const store={get(k,d){try{const v=localStorage.getItem(k);return v?JSON.parse(v):d}catch(e){return d}},set(k,v){try{localStorage.setItem(k,JSON.stringify(v))}catch(e){}}};
+function jstNow(){const d=new Date(Date.now()+9*3600e3);return{date:d.toISOString().slice(0,10),min:d.getUTCHours()*60+d.getUTCMinutes()}}
+
+/* countdown */
+(function(){const n=jstNow();const diff=Math.round((Date.parse(EVENT_DATE)-Date.parse(n.date))/864e5);
+ const el=document.getElementById("countdown");
+ if(diff>0)el.textContent="当日まであと"+diff+"日";else if(diff===0)el.textContent="本日開催";})();
+
+/* schedule */
+function renderSchedule(){
+ const n=jstNow(),today=n.date===EVENT_DATE;
+ let html="";
+ SCHEDULE.forEach(sec=>{
+  html+='<div class="block"><h2>'+esc(sec.title)+'</h2><ol class="tl">';
+  sec.rows.forEach(r=>{
+   const s=toMin(r.s),e=toMin(r.e);
+   const dur=(s!=null&&e!=null)?(e-s):null;
+   const isNow=today&&s!=null&&!r.band&&(e!=null?(n.min>=s&&n.min<e):(n.min>=s&&n.min<s+10));
+   let t=r.s?'<b>'+r.s+'</b>'+(r.e?'<span>〜'+r.e+'</span>':'')+(dur!=null?'<em>'+dur+'分</em>':''):'<span class="same">同時進行</span>';
+   let meta="";
+   if(r.place)meta+='<span><i>場所</i>'+esc(r.place)+'</span>';
+   if(r.who)meta+='<span><i>担当</i><span class="'+(/\?/.test(r.who)?'tbd':'')+'">'+esc(r.who)+'</span></span>';
+   html+='<li class="ev'+(r.band?' band':'')+(isNow?' now':'')+'"><div class="t">'+t+'</div><div class="c"><p class="what">'+esc(r.what)+(isNow?'<span class="now-pill">いま</span>':'')+'</p>'+(meta?'<div class="meta">'+meta+'</div>':'')+(r.rem?'<p class="rem">'+esc(r.rem)+'</p>':'')+'</div></li>';
+  });
+  html+='</ol>'+(sec.foot?'<p class="note-line">'+esc(sec.foot)+'</p>':'')+'</div>';
+ });
+ document.getElementById("v-schedule").innerHTML=html;
+}
+
+/* bus */
+const BUS_KEY="shokoga-bus-v1";
+function renderBus(){
+ const done=store.get(BUS_KEY,{});
+ const total=BUS.reduce((a,g)=>a+g.names.length,0);
+ const boarded=Object.values(done).filter(Boolean).length;
+ let no=0;
+ let html='<div class="block"><h2>バス乗車名簿</h2><div class="stops">'+BUS.map(g=>'<div class="stop"><small>'+esc(g.stop)+'</small><b>'+g.names.length+'<span> 名</span></b></div>').join("")+'</div></div>';
+ html+='<div class="block"><div class="toolbar"><span class="progress">乗車確認 '+boarded+' / '+total+' 名</span><button class="btn" id="bus-reset" type="button">チェックを全解除</button></div><p class="hint">名前をタップすると乗車済みになります（チェックはこの端末にだけ保存）。</p><div class="bus-grid">';
+ BUS.forEach(g=>{
+  html+='<div class="bus-group"><h3>'+esc(g.stop)+'（'+g.names.length+'名）</h3><ul class="checks">';
+  g.names.forEach(nm=>{no++;const id="bus-"+no;
+   html+='<li><label for="'+id+'"><input type="checkbox" id="'+id+'" data-k="'+esc(nm)+'"'+(done[nm]?' checked':'')+'><span class="nm">'+esc(nm)+'</span><span class="num">No.'+no+'</span></label></li>';});
+  html+='</ul></div>';
+ });
+ html+='</div></div>';
+ const v=document.getElementById("v-bus");v.innerHTML=html;
+ v.querySelectorAll("input[type=checkbox]").forEach(cb=>cb.addEventListener("change",()=>{const d=store.get(BUS_KEY,{});d[cb.dataset.k]=cb.checked;store.set(BUS_KEY,d);renderBus();document.getElementById(cb.id).focus()}));
+ armReset(v.querySelector("#bus-reset"),()=>{store.set(BUS_KEY,{});renderBus()});
+}
+
+/* two-step reset (no confirm()) */
+function armReset(btn,fn){let armed=false,tm;btn.addEventListener("click",()=>{
+ if(!armed){armed=true;btn.textContent="もう一度押すと全解除";btn.classList.add("warn");tm=setTimeout(()=>{armed=false;btn.textContent="チェックを全解除";btn.classList.remove("warn")},3000)}
+ else{clearTimeout(tm);fn()}})}
+
+/* script */
+const SIZE_KEY="shokoga-script-size";
+const SIZES={"小":"1rem","中":"1.15rem","大":"1.35rem"};
+function renderScript(){
+ const cur=store.get(SIZE_KEY,"中");
+ document.documentElement.style.setProperty("--script-size",SIZES[cur]||SIZES["中"]);
+ let html='<div class="toolbar"><h2>司会台本</h2><div class="sizer" role="group" aria-label="文字サイズ">文字'+Object.keys(SIZES).map(k=>'<button type="button" data-s="'+k+'" aria-pressed="'+(k===cur)+'">'+k+'</button>').join("")+'</div></div><div class="script-col" style="display:grid;gap:22px">';
+ SCRIPT.forEach(sc=>{
+  html+='<div class="scene"><h2>'+esc(sc.scene)+'</h2>';
+  sc.lines.forEach(l=>{
+   if(l.cue){html+='<div class="cue">'+(l.who?'<span class="who other">'+esc(l.who)+'</span>':'')+'<b>'+esc(l.cue)+'</b></div>';return}
+   html+='<div class="line"><div class="hd">'+(l.t?'<b>'+l.t+'</b>':'')+'<span class="who '+(l.who==="司会"?"mc":"other")+'">'+esc(l.who)+'</span></div><p>'+esc(l.text)+'</p></div>';
+  });
+  html+='</div>';
+ });
+ html+='</div>';
+ const v=document.getElementById("v-script");v.innerHTML=html;
+ v.querySelectorAll(".sizer button").forEach(b=>b.addEventListener("click",()=>{store.set(SIZE_KEY,b.dataset.s);renderScript()}));
+}
+
+/* items */
+const ITEM_KEY="shokoga-items-v2";let itemFilter="すべて";
+function renderItems(){
+ const done=store.get(ITEM_KEY,{});
+ const owners=["すべて"].concat([...new Set(ITEMS.map(i=>i[1]))]);
+ const list=ITEMS.map((it,i)=>({no:i+1,name:it[0],who:it[1],rem:it[2]})).filter(it=>itemFilter==="すべて"||it.who===itemFilter);
+ const cnt=ITEMS.filter((it,i)=>done[i+1]).length;
+ let html='<div class="block"><div class="toolbar"><h2>当日 準備物リスト</h2><span class="progress">'+cnt+' / '+ITEMS.length+' 済</span></div>';
+ html+='<div class="filters" role="group" aria-label="担当で絞り込み">'+owners.map(o=>'<button type="button" data-o="'+esc(o)+'" aria-pressed="'+(o===itemFilter)+'">'+esc(o)+'</button>').join("")+'</div>';
+ html+='<p class="hint">タップでチェック（この端末にだけ保存）。</p><div class="items-list"><ul class="checks">';
+ list.forEach(it=>{const id="item-"+it.no;
+  html+='<li style="break-inside:avoid"><label for="'+id+'"><input type="checkbox" id="'+id+'" data-k="'+it.no+'"'+(done[it.no]?' checked':'')+'><span class="nm">'+esc(it.name)+(it.rem?'<span class="sub">'+esc(it.rem)+'</span>':'')+'</span><span class="chip">'+esc(it.who)+'</span></label></li>';});
+ html+='</ul></div><div class="toolbar"><span></span><button class="btn" id="item-reset" type="button">チェックを全解除</button></div></div>';
+ const v=document.getElementById("v-items");v.innerHTML=html;
+ v.querySelectorAll(".filters button").forEach(b=>b.addEventListener("click",()=>{itemFilter=b.dataset.o;renderItems()}));
+ v.querySelectorAll("input[type=checkbox]").forEach(cb=>cb.addEventListener("change",()=>{const d=store.get(ITEM_KEY,{});d[cb.dataset.k]=cb.checked;store.set(ITEM_KEY,d);renderItems();document.getElementById(cb.id).focus()}));
+ armReset(v.querySelector("#item-reset"),()=>{store.set(ITEM_KEY,{});renderItems()});
+}
+
+/* routing */
+const VIEWS=["schedule","bus","script","items"];
+function route(){
+ const h=(location.hash||"").slice(1);const view=VIEWS.includes(h)?h:"schedule";
+ VIEWS.forEach(v=>{document.getElementById("v-"+v).hidden=(v!==view)});
+ document.querySelectorAll("nav a").forEach(a=>a.setAttribute("aria-current",a.dataset.view===view?"page":"false"));
+}
+renderSchedule();renderBus();renderScript();renderItems();route();
+window.addEventListener("hashchange",()=>{route();window.scrollTo(0,0)});
+setInterval(renderSchedule,60000);
+})();
+</script>
+</body>
+</html>
